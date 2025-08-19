@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Challenge!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Grammar Challenge!</h1>
+        <h2>Let's master English grammar!</h2>
+    </header>
+    <div id="subhead">
+        <p>Bem-vindo ao seu desafio de gramática! Aqui você vai aprender e praticar pontos essenciais do inglês. Preparado para detonar?</p>
+    </div>
+
+    <ul id="questionsList">
+        <section class="current">
+            <li>
+                <h3>Comparativo de Igualdade: Tão... Quanto! ✨</h3>
+                <p>Já se perguntou como dizer que uma coisa é "tão" boa "quanto" outra em inglês? É super simples com o **"as... as"**! Pense nele como a balança da igualdade na gramática. ⚖️</p>
+                <p>A estrutura é assim: **AS + adjetivo + AS**.</p>
+                <ul>
+                    <li>Quer dizer que o Magic Johnson era **tão alto quanto** alguém? É só falar: "He is **as tall as** Magic Johnson." </li>
+                    <li>E se eles não são **tão bons quanto** nós? "They aren't **as good as** we are." (Aqui, "good" é o adjetivo, e ele fica no meio dos "as"!)</li>
+                </ul>
+                <p>É tipo quando você compara dois amigos e diz: "João é **tão engraçado quanto** Maria!" Em inglês seria: "João is **as funny as** Maria." Fácil, né? 😉</p>
+
+                <h3>Erros Comuns ao usar "as...as":</h3>
+                <ul>
+                    <li>**Esquecer o segundo "as":** "He is as tall Magic Johnson." (Errado!) Lembre-se, são dois "as"!</li>
+                    <li>**Colocar "than" no lugar de "as":** "She is as smart than him." (Errado!) "Than" é para comparativo de superioridade/inferioridade.</li>
+                    <li>**Mudar a forma do adjetivo:** O adjetivo no meio do "as...as" deve estar na sua forma normal (grau positivo), não comparativa. Por exemplo, "as *good* as", não "as *better* as".</li>
+                </ul>
+                <p>Entendeu a explicação sobre "as...as"?</p>
+                <span class="questionItem">
+                    <input id="q1_comprehension_yes" type="radio" name="comprehension_1" value="yes"><label for="q1_comprehension_yes">Sim, entendi perfeitamente!</label>
+                </span>
+                <span class="questionItem">
+                    <input id="q1_comprehension_no" type="radio" name="comprehension_1" value="no"><label for="q1_comprehension_no">Ainda tenho algumas dúvidas...</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+
+        <section>
+            <li>
+                <p>1. My house is _________ your house. (tall)</p>
+                <span class="questionItem">
+                    <input id="a1_q1" type="radio" name="one" value="as tall as"><label for="a1_q1">as tall as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="a1_q2" type="radio" name="one" value="taller than"><label for="a1_q2">taller than</label>
+                </span>
+                <span class="questionItem">
+                    <input id="a1_q3" type="radio" name="one" value="as tall than"><label for="a1_q3">as tall than</label>
+                </span>
+                <span class="questionItem">
+                    <input id="a1_q4" type="radio" name="one" value="tall as"><label for="a1_q4">tall as</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>2. This test is _________ the one we had last week. (difficult)</p>
+                <span class="questionItem">
+                    <input id="b1_q1" type="radio" name="two" value="more difficult as"><label for="b1_q1">more difficult as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="b1_q2" type="radio" name="two" value="as difficult as"><label for="b1_q2">as difficult as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="b1_q3" type="radio" name="two" value="difficult as"><label for="b1_q3">difficult as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="b1_q4" type="radio" name="two" value="as difficulty as"><label for="b1_q4">as difficulty as</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>3. A cheetah is _________ a lion. (fast)</p>
+                <span class="questionItem">
+                    <input id="c1_q1" type="radio" name="three" value="faster as"><label for="c1_q1">faster as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="c1_q2" type="radio" name="three" value="as fast as"><label for="c1_q2">as fast as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="c1_q3" type="radio" name="three" value="as fastest as"><label for="c1_q3">as fastest as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="c1_q4" type="radio" name="three" value="fast than"><label for="c1_q4">fast than</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>4. New York is _________ London in winter. (cold)</p>
+                <span class="questionItem">
+                    <input id="d1_q1" type="radio" name="four" value="colder as"><label for="d1_q1">colder as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="d1_q2" type="radio" name="four" value="as cold as"><label for="d1_q2">as cold as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="d1_q3" type="radio" name="four" value="as colder as"><label for="d1_q3">as colder as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="d1_q4" type="radio" name="four" value="coldest as"><label for="d1_q4">coldest as</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>5. This book is _________ that movie. (interesting)</p>
+                <span class="questionItem">
+                    <input id="e1_q1" type="radio" name="five" value="more interesting as"><label for="e1_q1">more interesting as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="e1_q2" type="radio" name="five" value="as interesting as"><label for="e1_q2">as interesting as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="e1_q3" type="radio" name="five" value="interesting as"><label for="e1_q3">interesting as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="e1_q4" type="radio" name="five" value="most interesting as"><label for="e1_q4">most interesting as</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>6. His phone is _________ mine. (expensive)</p>
+                <span class="questionItem">
+                    <input id="f1_q1" type="radio" name="six" value="expensiver as"><label for="f1_q1">expensiver as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="f1_q2" type="radio" name="six" value="as expensive as"><label for="f1_q2">as expensive as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="f1_q3" type="radio" name="six" value="expensive as"><label for="f1_q3">expensive as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="f1_q4" type="radio" name="six" value="more expensive than"><label for="f1_q4">more expensive than</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>7. My brother is _________ me. (funny)</p>
+                <span class="questionItem">
+                    <input id="g1_q1" type="radio" name="seven" value="funnier as"><label for="g1_q1">funnier as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="g1_q2" type="radio" name="seven" value="as funny as"><label for="g1_q2">as funny as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="g1_q3" type="radio" name="seven" value="funny as"><label for="g1_q3">funny as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="g1_q4" type="radio" name="seven" value="more funny than"><label for="g1_q4">more funny than</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>8. Today is _________ yesterday. (hot)</p>
+                <span class="questionItem">
+                    <input id="h1_q1" type="radio" name="eight" value="hotter as"><label for="h1_q1">hotter as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="h1_q2" type="radio" name="eight" value="as hot as"><label for="h1_q2">as hot as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="h1_q3" type="radio" name="eight" value="hot as"><label for="h1_q3">hot as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="h1_q4" type="radio" name="eight" value="as hotter as"><label for="h1_q4">as hotter as</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>9. The blue backpack is _________ the red one. (heavy)</p>
+                <span class="questionItem">
+                    <input id="i1_q1" type="radio" name="nine" value="heavier as"><label for="i1_q1">heavier as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="i1_q2" type="radio" name="nine" value="as heavy as"><label for="i1_q2">as heavy as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="i1_q3" type="radio" name="nine" value="heavy as"><label for="i1_q3">heavy as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="i1_q4" type="radio" name="nine" value="as heaviest as"><label for="i1_q4">as heaviest as</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>10. Her idea was _________ yours. (good)</p>
+                <span class="questionItem">
+                    <input id="j1_q1" type="radio" name="ten" value="better as"><label for="j1_q1">better as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="j1_q2" type="radio" name="ten" value="as good as"><label for="j1_q2">as good as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="j1_q3" type="radio" name="ten" value="good as"><label for="j1_q3">good as</label>
+                </span>
+                <span class="questionItem">
+                    <input id="j1_q4" type="radio" name="ten" value="best as"><label for="j1_q4">best as</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+
+        <section>
+            <li>
+                <h3>Futuro: "Will" vs. "Going to" – Qual usar? 🤔</h3>
+                <p>Ah, o futuro! Em português, temos "eu vou" e "eu irei". Em inglês, a coisa é parecida com **"will"** e **"going to"**. Mas, qual é a diferença? Não se preocupe, é mais fácil do que parece! 😉</p>
+
+                <h4>**"Will"** (O decidor rápido! ⚡)</h4>
+                <p>Use o "will" para:</p>
+                <ul>
+                    <li>**Decisões tomadas na hora:** Sabe quando você está com fome e decide na hora "Vou comer uma pizza!"? Em inglês, seria "I **will** have pizza!" É uma decisão espontânea, sem muito planejamento. 🍕</li>
+                    <li>**Previsões baseadas em opinião:** Quando você acha que algo vai acontecer, mas não tem uma prova concreta. "Eu acho que o Brasil **vai** ganhar a Copa." (Espero que sim! 🙏) "I think Brazil **will** win the World Cup."</li>
+                    <li>**Fatos futuros:** Coisas que simplesmente vão acontecer, sem chance de mudar. "O sol **nascerá** às 6 da manhã amanhã." "The sun **will** rise at 6:00 tomorrow." ☀️</li>
+                    <li>**Ofertas e promessas:** "Eu **vou** te ajudar com as malas." "I **will** help you with your bags."</li>
+                </ul>
+                <p>**Estrutura:** Sujeito + will + verbo no infinitivo (sem "to")</p>
+                <ul>
+                    <li>Afirmativa: He **will** eat.</li>
+                    <li>Negativa: He **won't** (will not) eat.</li>
+                    <li>Pergunta: **Will** he eat?</li>
+                </ul>
+
+                <h4>**"Going to"** (O planejador e o vidente! 🔮)</h4>
+                <p>Use o "going to" para:</p>
+                <ul>
+                    <li>**Planos e intenções:** Quando você já pensou e decidiu fazer algo. "Eu **vou** visitar minha avó na próxima sexta." (Já está planejado!). "I am **going to** visit my aunt next Friday."</li>
+                    <li>**Previsões baseadas em evidências:** Se você vê nuvens escuras, pode prever com certeza que **vai** chover. "Olhe essas nuvens! **Vai** chover." "Look at those clouds! It is **going to** rain." ⛈️</li>
+                    <li>**Algo que está prestes a acontecer:** "Cuidado! A bomba **vai** explodir!" (Tomara que não seja de verdade! 😬) "Get back! The bomb is **going to** explode."</li>
+                </ul>
+                <p>**Estrutura:** Sujeito + verbo "to be" (am/is/are) + going to + verbo no infinitivo (sem "to")</p>
+                <ul>
+                    <li>Afirmativa: They **are going to** study.</li>
+                    <li>Negativa: They **aren't going to** study.</li>
+                    <li>Pergunta: **Are** they **going to** study?</li>
+                </ul>
+                
+
+                <p>**Dica Bônus:** Às vezes, "will" e "going to" podem ser usados para fazer previsões sem muita diferença de significado. Por exemplo, "I think it will be foggy tomorrow" e "I think it is going to be foggy tomorrow" significam a mesma coisa!</p>
+
+                <h3>Erros Comuns ao usar "will" e "going to":</h3>
+                <ul>
+                    <li>**Confundir decisões espontâneas com planos:** "I'm going to eat pizza now." (Se a decisão foi na hora, use "will".)</li>
+                    <li>**Usar "will" para planos já definidos:** "Next month, I will travel to Europe." (Se é um plano, "I am going to travel..." é mais apropriado.)</li>
+                    <li>**Esquecer o verbo "to be" com "going to":** "She going to study." (Errado! Deve ser "She **is** going to study.")</li>
+                    <li>**Usar "to" depois de "will":** "He will to go." (Errado! "Will" é seguido do infinitivo sem "to": "He will go.")</li>
+                </ul>
+                <p>Entendeu a diferença entre "will" e "going to"?</p>
+                <span class="questionItem">
+                    <input id="q2_comprehension_yes" type="radio" name="comprehension_2" value="yes"><label for="q2_comprehension_yes">Sim, entendi perfeitamente!</label>
+                </span>
+                <span class="questionItem">
+                    <input id="q2_comprehension_no" type="radio" name="comprehension_2" value="no"><label for="q2_comprehension_no">Ainda tenho algumas dúvidas...</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+
+        <section>
+            <li>
+                <p>11. Offer – I _________ help you carry those bags. (help)</p>
+                <span class="questionItem">
+                    <input id="k1_q1" type="radio" name="eleven" value="will help"><label for="k1_q1">will help</label>
+                </span>
+                <span class="questionItem">
+                    <input id="k1_q2" type="radio" name="eleven" value="am going to help"><label for="k1_q2">am going to help</label>
+                </span>
+                <span class="questionItem">
+                    <input id="k1_q3" type="radio" name="eleven" value="help"><label for="k1_q3">help</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>12. Plan – We _________ visit our grandparents this weekend. (visit)</p>
+                <span class="questionItem">
+                    <input id="l1_q1" type="radio" name="twelve" value="will visit"><label for="l1_q1">will visit</label>
+                </span>
+                <span class="questionItem">
+                    <input id="l1_q2" type="radio" name="twelve" value="are going to visit"><label for="l1_q2">are going to visit</label>
+                </span>
+                <span class="questionItem">
+                    <input id="l1_q3" type="radio" name="twelve" value="visit"><label for="l1_q3">visit</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>13. Promise – I _________ call you as soon as I get home. (call)</p>
+                <span class="questionItem">
+                    <input id="m1_q1" type="radio" name="thirteen" value="will call"><label for="m1_q1">will call</label>
+                </span>
+                <span class="questionItem">
+                    <input id="m1_q2" type="radio" name="thirteen" value="am going to call"><label for="m1_q2">am going to call</label>
+                </span>
+                <span class="questionItem">
+                    <input id="m1_q3" type="radio" name="thirteen" value="call"><label for="m1_q3">call</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>14. Prediction (based on what you see) – Look at those clouds! It _________ rain soon. (rain)</p>
+                <span class="questionItem">
+                    <input id="n1_q1" type="radio" name="fourteen" value="will rain"><label for="n1_q1">will rain</label>
+                </span>
+                <span class="questionItem">
+                    <input id="n1_q2" type="radio" name="fourteen" value="is going to rain"><label for="n1_q2">is going to rain</label>
+                </span>
+                <span class="questionItem">
+                    <input id="n1_q3" type="radio" name="fourteen" value="rain"><label for="n1_q3">rain</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>15. Decision made now – I'm tired. I _________ take a nap. (take)</p>
+                <span class="questionItem">
+                    <input id="o1_q1" type="radio" name="fifteen" value="will take"><label for="o1_q1">will take</label>
+                </span>
+                <span class="questionItem">
+                    <input id="o1_q2" type="radio" name="fifteen" value="am going to take"><label for="o1_q2">am going to take</label>
+                </span>
+                <span class="questionItem">
+                    <input id="o1_q3" type="radio" name="fifteen" value="take"><label for="o1_q3">take</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>16. Prediction (opinion) – I think Brazil _________ win the World Cup. (win)</p>
+                <span class="questionItem">
+                    <input id="p1_q1" type="radio" name="sixteen" value="will win"><label for="p1_q1">will win</label>
+                </span>
+                <span class="questionItem">
+                    <input id="p1_q2" type="radio" name="sixteen" value="is going to win"><label for="p1_q2">is going to win</label>
+                </span>
+                <span class="questionItem">
+                    <input id="p1_q3" type="radio" name="sixteen" value="wins"><label for="p1_q3">wins</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>17. Warning/Threat – Be careful or you _________ hurt yourself! (hurt)</p>
+                <span class="questionItem">
+                    <input id="q1_q1" type="radio" name="seventeen" value="will hurt"><label for="q1_q1">will hurt</label>
+                </span>
+                <span class="questionItem">
+                    <input id="q1_q2" type="radio" name="seventeen" value="are going to hurt"><label for="q1_q2">are going to hurt</label>
+                </span>
+                <span class="questionItem">
+                    <input id="q1_q3" type="radio" name="seventeen" value="hurt"><label for="q1_q3">hurt</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>18. Intention – They _________ study medicine next year. (study)</p>
+                <span class="questionItem">
+                    <input id="r1_q1" type="radio" name="eighteen" value="will study"><label for="r1_q1">will study</label>
+                </span>
+                <span class="questionItem">
+                    <input id="r1_q2" type="radio" name="eighteen" value="are going to study"><label for="r1_q2">are going to study</label>
+                </span>
+                <span class="questionItem">
+                    <input id="r1_q3" type="radio" name="eighteen" value="study"><label for="r1_q3">study</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>19. Spontaneous decision – Oh, you forgot your lunch! I _________ bring it to you. (bring)</p>
+                <span class="questionItem">
+                    <input id="s1_q1" type="radio" name="nineteen" value="will bring"><label for="s1_q1">will bring</label>
+                </span>
+                <span class="questionItem">
+                    <input id="s1_q2" type="radio" name="nineteen" value="am going to bring"><label for="s1_q2">am going to bring</label>
+                </span>
+                <span class="questionItem">
+                    <input id="s1_q3" type="radio" name="nineteen" value="bring"><label for="s1_q3">bring</label>
+                </span>
+                <a href="#" class="nextButton">Next Question &gt;</a>
+            </li>
+        </section>
+        <section>
+            <li>
+                <p>20. Future fact – The sun _________ rise at 6:00 tomorrow. (rise)</p>
+                <span class="questionItem">
+                    <input id="t1_q1" type="radio" name="twenty" value="will rise"><label for="t1_q1">will rise</label>
+                </span>
+                <span class="questionItem">
+                    <input id="t1_q2" type="radio" name="twenty" value="is going to rise"><label for="t1_q2">is going to rise</label>
+                </span>
+                <span class="questionItem">
+                    <input id="t1_q3" type="radio" name="twenty" value="rises"><label for="t1_q3">rises</label>
+                </span>
+                <a href="#" id="submitAnswers" class="finalButton">Submit Answers</a>
+            </li>
+        </section>
+    </ul>
+
+    <script src="jav.js"></script>
+</body>
+</html>

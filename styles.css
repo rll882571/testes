@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Loved+by+the+King);
+
+body {
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    margin-left: 100px;
+    /* Removido padding-left redundante */
+    padding: 30px 0 30px 30px; /* Consolidado o padding */
+}
+
+header {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    /* Mantido prefixo para maior compatibilidade, mas o unprefixed é o mais importante */
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-transform-origin: bottom-left;
+    transform-origin: bottom-left;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Loved by the King', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 35px;
+}
+
+h2 {
+    font-size: 22px;
+    letter-spacing: -1.3px;
+    text-transform: lowercase;
+}
+
+#subhead {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Loved by the King', cursive;
+    color: #8c8c8c;
+    line-height: 38px;
+}
+
+a {
+    color: #333333;
+}
+
+#questionsList {
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+#questionsList section {
+    display: none;
+}
+
+#questionsList section.current {
+    display: block;
+    position: relative;
+}
+
+#questionsList li {
+    /* display: list-item; é o padrão para li, então é redundante */
+    margin: 0 auto;
+    list-style: none;
+}
+
+#questionsList li:before {
+    position: absolute;
+    top: -30px;
+    left: -1em;
+    font-family: 'Loved by the King', cursive;
+    font-size: 5em;
+    color: #8C8C8C;
+    content: "Q:";
+}
+
+#questionsList .questionItem {
+    margin: 0 auto;
+    padding: 1em 0;
+    position: relative;
+    display: block;
+}
+
+#questionsList .questionItem svg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    left: 5px;
+    pointer-events: none;
+}
+
+#questionsList .questionItem svg path {
+    stroke: #8C8C8C;
+    stroke-width: 13px;
+    background: none; /* Propriedade 'background' não se aplica a 'path' de SVG diretamente */
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+#questionsList .questionItem label {
+    display: inline-block;
+    position: relative;
+    font-family: 'Loved by the King', cursive;
+    font-size: 2em;
+    color: #8C8C8C;
+    padding: 0 0 0 80px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#questionsList .questionItem label::before {
+    border-radius: 50%;
+    content: '';
+    border: 4px solid #8C8C8C;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 0;
+    margin-top: -25px;
+    position: absolute;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#questionsList .questionItem input[type=radio] {
+    -webkit-appearance: none;
+    appearance: none; /* Adicionado prefixo 'appearance' padrão */
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+.nextButton, .finalButton {
+    display: block;
+    border: 4px solid #8C8C8C;
+    border-radius: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 5px 10px;
+    font-family: 'Loved by the King', cursive;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: #8C8C8C;
+}
