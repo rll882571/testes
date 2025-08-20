@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif; /* Uma fonte comum para provas */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0;
+    display: flex; /* Para centralizar o conteúdo da página */
+    justify-content: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Ocupa a altura total da viewport */
+    background-color: #f0f0f0; /* Um fundo suave para simular a área externa da "folha" */
+}
+
+header {
+    width: 21cm; /* Largura de uma folha A4 (aprox.) */
+    /* Você pode ajustar isso se quiser uma "folha" mais estreita */
+    min-height: 29.7cm; /* Altura mínima de uma folha A4 (aprox.) */
+    background-color: #ffffff; /* Fundo branco para a "folha" */
+    padding: 2cm; /* Margens internas da "folha" */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade de folha */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    margin-top: 2cm; /* Margem superior para posicionar a "folha" na tela */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura */
+}
+
+header h1 {
+    font-size: 1.1em; /* Ajuste o tamanho da fonte se necessário */
+    margin-bottom: 8px; /* Espaçamento entre o h1 e o p */
+}
+header h3 {
+    font-size: 1.0em; /* Ajuste o tamanho da fonte se necessário */
+    
+}
+
+header hr {
+    border: none;
+    border-top: 1px solid #000; /* Linha preta simples */
+    width: 80%; /* Largura da linha, ajuste conforme o print */
+    margin: 0 auto; /* Centraliza a linha */
+}
