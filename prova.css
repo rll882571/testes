@@ -28,7 +28,7 @@ header {
 /* Estilo da caixa de nota */
 .grade-box {
     position: absolute;
-    top: -20px;
+    top: -30px;
     right: 0;
     width: 2.5cm;
     height: 2cm;
@@ -42,7 +42,7 @@ header {
 .grade-box p {
     font-weight: bold;
     font-size: 0.6em;
-    margin-top: -1.0cm;
+    margin-top: -.0cm;
     
 }
 
@@ -76,6 +76,10 @@ header hr {
     border: none;
     border-top: 1px solid #000;
     width: 50%;
-    margin-top:-2px;
+    margin-top:-18px;
     margin-left: 60px;
     }
+.aluno p {
+    
+    margin-top: 30px;
+    } 
