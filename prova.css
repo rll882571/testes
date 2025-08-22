@@ -1,37 +1,67 @@
 body {
-    font-family: Arial, sans-serif; /* Uma fonte comum para provas */
-    margin: 0; /* Remove margens padrão do corpo */
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-    display: flex; /* Para centralizar o conteúdo da página */
-    justify-content: center; /* Centraliza horizontalmente */
-    min-height: 100vh; /* Ocupa a altura total da viewport */
-    background-color: #f0f0f0; /* Um fundo suave para simular a área externa da "folha" */
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
 }
 
 header {
-    width: 21cm; /* Largura de uma folha A4 (aprox.) */
-    /* Você pode ajustar isso se quiser uma "folha" mais estreita */
-    min-height: 29.7cm; /* Altura mínima de uma folha A4 (aprox.) */
-    background-color: #ffffff; /* Fundo branco para a "folha" */
-    padding: 2cm; /* Margens internas da "folha" */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade de folha */
-    text-align: center; /* Centraliza o texto dentro do cabeçalho */
-    margin-top: 2cm; /* Margem superior para posicionar a "folha" na tela */
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura */
+    width: 21cm;
+    min-height: 29.7cm;
+    background-color: #ffffff;
+    padding: 2cm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 2cm;
+}
+
+/* Container para alinhar os elementos do cabeçalho */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o texto do cabeçalho */
+    position: relative;
+}
+
+/* Estilo da caixa de nota */
+.grade-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5cm;
+    height: 2cm;
+    border: 1px solid #000;
+    border-radius: 8px; /* Borda arredondada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grade-box p {
+    font-weight: bold;
+    font-size: 0.6em;
+    margin-top: -1.0cm;
+    
 }
 
 header h1 {
-    font-size: 1.1em; /* Ajuste o tamanho da fonte se necessário */
-    margin-bottom: 8px; /* Espaçamento entre o h1 e o p */
-}
-header h3 {
-    font-size: 1.0em; /* Ajuste o tamanho da fonte se necessário */
+    font-size: 0.8em;
+    text-align:center ;
     
+}
+
+header h3 {
+    font-size: .8em;
+    text-align:center ;
 }
 
 header hr {
     border: none;
-    border-top: 1px solid #000; /* Linha preta simples */
-    width: 80%; /* Largura da linha, ajuste conforme o print */
-    margin: 0 auto; /* Centraliza a linha */
+    border-top: 1px solid #000;
+    width: 90%;
+    margin-top: 0.1cm;
+    margin-left: 60px;
+    
 }
