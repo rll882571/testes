@@ -28,7 +28,7 @@ header {
 /* Estilo da caixa de nota */
 .grade-box {
     position: absolute;
-    top: -30px;
+    top: -40px;
     right: 0;
     width: 2.5cm;
     height: 2cm;
@@ -42,7 +42,7 @@ header {
 .grade-box p {
     font-weight: bold;
     font-size: 0.6em;
-    margin-top: -.0cm;
+    margin-top: -.9cm;
     
 }
 
@@ -72,14 +72,31 @@ header hr {
     margin-top:-2px;
     
 }
+.turma {
+    font-size: .9em;
+    text-align:left ;
+    margin-top:-2px;
+    }
 .second {
     border: none;
     border-top: 1px solid #000;
-    width: 50%;
+    width: 55%;
     margin-top:-18px;
     margin-left: 60px;
+    }
+.third {
+    border: none;
+    border-top: 1px solid #000;
+    width: 8%;
+    margin-top:-18px;
+    margin-left: 480px;
     }
 .aluno p {
     
     margin-top: 30px;
+    
     } 
+.turma p {
+    margin-top: -20px;
+    margin-left: 430px;
+    }
