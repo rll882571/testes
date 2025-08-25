@@ -70,7 +70,6 @@ header hr {
     font-size: .8em;
     text-align:left ;
     margin-top:-2px;
-    
 }
 .turma {
     font-size: .9em;
@@ -99,4 +98,18 @@ header hr {
 .turma p {
     margin-top: -20px;
     margin-left: 430px;
-    }
+}
+.sede {
+    font-size: .8em;
+    text-align:left ;
+    margin-top:-2px;
+}
+.fourth{
+    border: none;
+    border-top: 1px solid #000;
+    width: 300%;
+    margin-top:-18px;
+    margin-left: -244px;
+}
+.sede p{
+}
