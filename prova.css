@@ -1,3 +1,4 @@
+/* Estilos originais fornecidos pelo usuário */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,23 +18,21 @@ header {
     margin-top: 2cm;
 }
 
-/* Container para alinhar os elementos do cabeçalho */
 .header-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o texto do cabeçalho */
+    align-items: center;
     position: relative;
 }
 
-/* Estilo da caixa de nota */
 .grade-box {
     position: absolute;
-    top: -40px;
+    top: -35px;
     right: 0;
     width: 2.5cm;
     height: 2cm;
     border: 1px solid #000;
-    border-radius: 8px; /* Borda arredondada */
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +42,11 @@ header {
     font-weight: bold;
     font-size: 0.6em;
     margin-top: -.9cm;
-    
 }
 
 header h1 {
     font-size: 0.8em;
     text-align:center ;
-    
 }
 
 header h3 {
@@ -63,7 +60,6 @@ header hr {
     width: 90%;
     margin-top: 0.1cm;
     margin-left: 60px;
-    
 }
 
 .aluno {
@@ -74,35 +70,33 @@ header hr {
 .turma {
     font-size: .9em;
     text-align:left ;
-    margin-top:-2px;
-    }
+    margin-top:-43px;
+}
 .second {
     border: none;
     border-top: 1px solid #000;
     width: 55%;
     margin-top:-18px;
     margin-left: 60px;
-    }
+}
 .third {
     border: none;
     border-top: 1px solid #000;
     width: 8%;
     margin-top:-18px;
     margin-left: 480px;
-    }
+}
 .aluno p {
-    
     margin-top: 30px;
-    
-    } 
+}
 .turma p {
-    margin-top: -20px;
-    margin-left: 430px;
+    margin-top:-16px;
+    margin-left: 460px;
 }
 .sede {
     font-size: .8em;
     text-align:left ;
-    margin-top:-2px;
+    margin-top:25px;
 }
 .fourth{
     border: none;
@@ -111,5 +105,110 @@ header hr {
     margin-top:-18px;
     margin-left: -244px;
 }
-.sede p{
+
+.quarto{
+    border: none;
+    border-top: 1px solid #000;
+    width: 21%;
+    margin-top:-27px;
+    margin-left: 60px;
+}
+.quinto{
+    border: none;
+    border-top: 1px solid #000;
+    width: 10%;
+    margin-top:-20px;
+    margin-left: 250px;
+}
+.tur {
+    font-size: .8em;
+    text-align:left ;
+    margin-top:10px;
+}
+.tur p {
+    margin-top: -20px;
+    margin-left: 200px;
+}
+
+.scores {
+    font-size: .8em;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.scores p {
+    margin-top: -16px;
+    margin-left: 325px;
+}
+
+.sexto {
+    border: none;
+    border-top: 1px solid #000;
+    width: 10%;
+    margin-top: -20px;
+    margin-left: 430px;
+}
+
+.instruction{
+    margin-top: 95px;
+}
+.instruction p{
+    font-size: .7em;
+}
+.text{
+    margin-top: 45px;
+    text-align: center;
+}
+.text h1{
+    font-size: .9em;
+}
+.text p{
+    text-align: justify;
+}
+
+.question{
+    margin-top: 55px;
+}
+.options{
+    margin-top: 55px;
+}
+
+/* --- NOVOS ESTILOS PARA A INTERATIVIDADE --- */
+
+.option {
+    position: relative; 
+    cursor: pointer; 
+    padding: 4px 0; 
+    user-select: none; 
+}
+
+/* Opcional: ajustar a margem do texto para dar espaço ao 'X' */
+.option {
+    position: relative;
+    padding-left: 20px; /* Adiciona um espaço à esquerda para o 'X' */
+}
+
+/* Estilos para o 'X' */
+.option.selected::before,
+.option.selected::after {
+    /* Ajusta a posição para que fique em cima da letra */
+    position: absolute;
+    top: 50%;
+    /* Posiciona o 'X' dentro do espaço criado pelo padding-left */
+    left: 25px;
+    content: '';
+    /* Diminui o tamanho das linhas para o 'X' */
+    width: 14px;
+    height: 2px;
+    background-color: #1133da;
+}
+
+.option.selected::before {
+    /* Rotação para a primeira linha do 'X' */
+    transform: rotate(45deg);
+}
+
+.option.selected::after {
+    /* Rotação para a segunda linha do 'X' */
+    transform: rotate(-45deg);
 }
