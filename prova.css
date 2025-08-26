@@ -1,4 +1,4 @@
-/* Estilos originais fornecidos pelo usuário */
+/* Estilos originais e ajustados */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,7 +9,8 @@ body {
 }
 
 header {
-    width: 21cm;
+    max-width: 21cm;
+    width: 90%;
     min-height: 29.7cm;
     background-color: #ffffff;
     padding: 2cm;
@@ -174,41 +175,54 @@ header hr {
 }
 
 /* --- NOVOS ESTILOS PARA A INTERATIVIDADE --- */
-
+/* O "x" do selecionado */
 .option {
     position: relative; 
     cursor: pointer; 
     padding: 4px 0; 
     user-select: none; 
+    padding-left: 20px;
 }
-
-/* Opcional: ajustar a margem do texto para dar espaço ao 'X' */
-.option {
-    position: relative;
-    padding-left: 20px; /* Adiciona um espaço à esquerda para o 'X' */
-}
-
-/* Estilos para o 'X' */
 .option.selected::before,
 .option.selected::after {
-    /* Ajusta a posição para que fique em cima da letra */
     position: absolute;
     top: 50%;
-    /* Posiciona o 'X' dentro do espaço criado pelo padding-left */
-    left: 25px;
+    left: 0;
     content: '';
-    /* Diminui o tamanho das linhas para o 'X' */
-    width: 14px;
+    width: 12px;
     height: 2px;
     background-color: #1133da;
 }
-
 .option.selected::before {
-    /* Rotação para a primeira linha do 'X' */
     transform: rotate(45deg);
 }
-
 .option.selected::after {
-    /* Rotação para a segunda linha do 'X' */
     transform: rotate(-45deg);
+}
+
+/* O NOVO BOTÃO DE ENVIAR */
+.submit-container {
+    text-align: center;
+    margin-top: 40px;
+}
+#submit-btn {
+    background-color: #1133da;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#submit-btn:hover {
+    background-color: #0b1f8f;
+}
+
+/* O ESTILO DE 'CANETA' PARA A NOTA FINAL */
+.final-score {
+    color: #0055ff; /* Cor de caneta azul */
+    font-weight: bold;
+    font-size: 1.2em;
+    /* font-family: 'Comic Sans MS', cursive; Opcional, se quiser uma fonte mais manuscrita */
 }
