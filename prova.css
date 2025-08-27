@@ -242,7 +242,8 @@ header hr {
 .resultado {
   color: red;         /* Cor do texto */
   font-size: 2.9em;   /* Tamanho da fonte maior que o padrão */
-  font-weight: bold;  /* Opcional: deixa o texto em negrito */
+  font-weight: bold;
+  font-family: 'Segoe Script', cursive; /* Opcional: deixa o texto em negrito */
 }
 
 
