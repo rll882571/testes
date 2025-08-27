@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 2. Lógica para calcular e exibir a nota
     const submitBtn = document.getElementById('submit-btn');
     const scoreDisplay = document.querySelector('.score-display');
-    const gradeDisplay = document.querySelector('.grade-box p');
+    const gradeDisplay = document.querySelector('.grade-box .resultado');
 
     // Define as respostas corretas (sempre a letra da opção)
     const correctAnswers = [
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Verifica se a questão foi respondida
             if (!selectedOption) {
                 isAllAnswered = false;
-                return; // Pula para a próxima iteração do forEach
+                return;
             }
 
             // Pega a letra da opção selecionada (ex: "A", "B", etc.)
@@ -61,10 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Atualiza o texto com a nota final
         scoreDisplay.textContent = `TOTAL SCORES: ${totalScore}/10`;
         gradeDisplay.textContent = totalScore;
-        
+
+        // Muda a cor do texto "Resultado" para azul
+        gradeDisplay.style.color = '#0055ff';
+
         // Adiciona a classe de estilo "caneta" para a nota
         gradeDisplay.classList.add('final-score');
-        
+
         // Desabilita o botão para evitar reenvio
         this.disabled = true;
         this.style.opacity = 0.6;

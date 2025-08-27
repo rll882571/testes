@@ -26,24 +26,35 @@ header {
     position: relative;
 }
 
+
 .grade-box {
-    position: absolute;
-    top: -35px;
-    right: 0;
-    width: 2.5cm;
-    height: 2cm;
-    border: 1px solid #000;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  width: 2.5cm;
+  height: 2cm;
+  border: 1px solid #000;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* empilha os elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  padding: 5px; /* espaço interno para melhor visualização */
 }
 
 .grade-box p {
-    font-weight: bold;
-    font-size: 0.6em;
-    margin-top: -.9cm;
+  font-weight: bold;
+  font-size: 0.6em;
+  margin: 2px 0; /* espaço entre os textos */
 }
+
+.grade-box .resultado {
+  font-size: 1em !important;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+
 
 header h1 {
     font-size: 0.8em;
@@ -146,7 +157,7 @@ header hr {
     border: none;
     border-top: 1px solid #000;
     width: 10%;
-    margin-top: -20px;
+    margin-top: -15px;
     margin-left: 430px;
 }
 
@@ -226,3 +237,14 @@ header hr {
     font-size: 1.2em;
     /* font-family: 'Comic Sans MS', cursive; Opcional, se quiser uma fonte mais manuscrita */
 }
+
+
+.resultado {
+  color: red;         /* Cor do texto */
+  font-size: 2.9em;   /* Tamanho da fonte maior que o padrão */
+  font-weight: bold;  /* Opcional: deixa o texto em negrito */
+}
+
+
+
+
