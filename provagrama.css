@@ -1,0 +1,258 @@
+/* Estilos originais e ajustados */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    max-width: 21cm;
+    width: 90%;
+    min-height: 29.7cm;
+    background-color: #ffffff;
+    padding: 2cm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 2cm;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.grade-box {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  width: 2.5cm;
+  height: 2cm;
+  border: 1px solid #000;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* empilha os elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  padding: 5px; /* espaço interno para melhor visualização */
+}
+
+.grade-box p {
+  font-weight: bold;
+  font-size: 0.6em;
+  margin: 2px 0; /* espaço entre os textos */
+}
+
+.grade-box .resultado {
+  font-size: 1em !important;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+
+
+header h1 {
+    font-size: 0.8em;
+    text-align:center ;
+}
+
+header h3 {
+    font-size: .8em;
+    text-align:center ;
+}
+
+header hr {
+    border: none;
+    border-top: 1px solid #000;
+    width: 90%;
+    margin-top: 0.1cm;
+    margin-left: 60px;
+}
+
+.aluno {
+    font-size: .8em;
+    text-align:left ;
+    margin-top:-2px;
+}
+.turma {
+    font-size: .9em;
+    text-align:left ;
+    margin-top:-43px;
+}
+.second {
+    border: none;
+    border-top: 1px solid #000;
+    width: 55%;
+    margin-top:-18px;
+    margin-left: 60px;
+}
+.third {
+    border: none;
+    border-top: 1px solid #000;
+    width: 8%;
+    margin-top:-18px;
+    margin-left: 480px;
+}
+.aluno p {
+    margin-top: 30px;
+}
+.turma p {
+    margin-top:-16px;
+    margin-left: 460px;
+}
+.sede {
+    font-size: .8em;
+    text-align:left ;
+    margin-top:25px;
+}
+.fourth{
+    border: none;
+    border-top: 1px solid #000;
+    width: 300%;
+    margin-top:-18px;
+    margin-left: -244px;
+}
+
+.quarto{
+    border: none;
+    border-top: 1px solid #000;
+    width: 21%;
+    margin-top:-27px;
+    margin-left: 60px;
+}
+.quinto{
+    border: none;
+    border-top: 1px solid #000;
+    width: 10%;
+    margin-top:-20px;
+    margin-left: 250px;
+}
+.tur {
+    font-size: .8em;
+    text-align:left ;
+    margin-top:10px;
+}
+.tur p {
+    margin-top: -20px;
+    margin-left: 200px;
+}
+
+.scores {
+    font-size: .8em;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.scores p {
+    margin-top: -16px;
+    margin-left: 325px;
+}
+
+.sexto {
+    border: none;
+    border-top: 1px solid #000;
+    width: 10%;
+    margin-top: -15px;
+    margin-left: 430px;
+}
+
+.instruction{
+    margin-top: 95px;
+}
+.instruction p{
+    font-size: .7em;
+}
+.text{
+    margin-top: 45px;
+    text-align: center;
+}
+.text h1{
+    font-size: .9em;
+}
+.text p{
+    text-align: justify;
+}
+
+.question{
+    margin-top: 55px;
+}
+.options{
+    margin-top: 55px;
+}
+
+/* --- NOVOS ESTILOS PARA A INTERATIVIDADE --- */
+/* O "x" do selecionado */
+.option {
+    position: relative; 
+    cursor: pointer; 
+    padding: 4px 0; 
+    user-select: none; 
+    padding-left: 20px;
+}
+.opt {
+    position: relative; 
+    cursor: pointer; 
+    padding: 4px 0; 
+    user-select: none; 
+    padding-left: 20px;
+}
+.option.selected::before,
+.option.selected::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #1133da;
+}
+.option.selected::before {
+    transform: rotate(45deg);
+}
+.option.selected::after {
+    transform: rotate(-45deg);
+}
+
+/* O NOVO BOTÃO DE ENVIAR */
+.submit-container {
+    text-align: center;
+    margin-top: 40px;
+}
+#submit-btn {
+    background-color: #1133da;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#submit-btn:hover {
+    background-color: #0b1f8f;
+}
+
+/* O ESTILO DE 'CANETA' PARA A NOTA FINAL */
+.final-score {
+    color: #0055ff; /* Cor de caneta azul */
+    font-weight: bold;
+    font-size: 1.2em;
+    /* font-family: 'Comic Sans MS', cursive; Opcional, se quiser uma fonte mais manuscrita */
+}
+
+
+.resultado {
+  color: red;         /* Cor do texto */
+  font-size: 2.9em;   /* Tamanho da fonte maior que o padrão */
+  font-weight: bold;
+  font-family: 'Segoe Script', cursive; /* Opcional: deixa o texto em negrito */
+}
+
+
+
+

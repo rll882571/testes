@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Compara com a resposta correta
             if (selectedAnswer === correctAnswers[index]) {
-                totalScore += 2; // Cada questão vale 2 pontos
+                totalScore += 1; // Cada questão vale 2 pontos
             }
         });
 
