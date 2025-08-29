@@ -255,4 +255,25 @@ header hr {
 
 
 
+/* --- ESTILOS PARA A NOVA LÓGICA DA QUESTÃO 3 --- */
 
+/* Estilo para todas as opções de verbo (antes de serem clicadas) */
+.verb-option {
+    font-weight: bold;          /* Deixa o texto em negrito, como você queria */
+    padding: 4px 8px;           /* Cria um espaço interno para o círculo não ficar colado no texto */
+    border-radius: 15px;        /* Deixa as bordas bem arredondadas, essencial para o círculo */
+    cursor: pointer;            /* Mostra a "mãozinha" ao passar o mouse, indicando que é clicável */
+    transition: all 0.2s ease;  /* Adiciona uma transição suave para os efeitos */
+    border: 2px solid transparent; /* Uma borda invisível para evitar que o layout "pule" quando a azul aparecer */
+}
+
+/* Efeito simples quando o mouse passa por cima */
+.verb-option:hover {
+    background-color: #f0f0f0; /* Um fundo cinza bem claro para indicar a seleção */
+}
+
+/* Estilo do verbo DEPOIS de ser clicado (o círculo azul) */
+.verb-option.selected {
+    border-color: #1133da;      /* A borda agora fica azul (usei a cor do seu botão ENVIAR) */
+    background-color: #eef2ff;  /* Adiciona um fundo azul bem clarinho para destacar mais */
+}
