@@ -48,24 +48,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Gabarito detalhado apenas para a Questão 3
         const correctAnswersQ3 = [
-            "saw",        // Resposta para o item A
-            "has worked", // Resposta para o item B
-            "hasn't done",// Resposta para o item C
-            "traveled",   // Resposta para o item D
-            "lived"       // Resposta para o item E
+            "have seen",  // ***** RESPOSTA ALTERADA AQUI DEVIDO À MUDANÇA NO HTML *****
+            "has worked", 
+            "hasn't done",
+            "have traveled",   
+            "has lived"       
         ];
         
         // Gabarito para as outras questões (índice da questão: "LETRA CORRETA")
         const otherCorrectAnswers = {
-            0: "C", // Questão 1 (Corrigido para a opção gramaticalmente correta)
+            0: "C", // Questão 1
             1: "C", // Questão 2
-            3: "C", // Questão 4
-            4: "C", // Questão 5
-            5: "C", // Questão 6
-            6: "C", // Questão 7
-            7: "C", // Questão 8
-            8: "C", // Questão 9
-            9: "C"  // Questão 10
+            3: "D", // Questão 4
+            4: "A", // Questão 5
+            5: "D", // Questão 6
+            6: "D", // Questão 7
+            7: "B", // Questão 8
+            8: "B", // Questão 9
+            9: "B"  // Questão 10
         };
 
         // Loop para verificar cada questão
