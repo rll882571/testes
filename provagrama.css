@@ -277,3 +277,78 @@ header hr {
     border-color: #1133da;      /* A borda agora fica azul (usei a cor do seu botão ENVIAR) */
     background-color: #eef2ff;  /* Adiciona um fundo azul bem clarinho para destacar mais */
 }
+
+/* --- ESTILOS PARA O BOTÃO DE AJUDA AO LADO DE CADA QUESTÃO --- */
+
+/* Torna o container da pergunta flexível para alinhar os itens */
+
+
+
+
+
+/* Formata o botão de ajuda */
+.help-btn-question {
+    background-color: #5c677d; /* Cor cinza-azulado */
+    color: white;
+    padding: 5px 12px; /* Botão menor e mais delicado */
+    border-radius: 5px;
+    font-size: 0.8em; /* Fonte pequena */
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 600px;
+}
+
+.help-btn-question:hover {
+    background-color: #4a5468;
+}
+
+/* --- ESTILOS PARA O MODAL DE VÍDEO --- */
+
+/* O fundo escuro que cobre a página inteira */
+.modal {
+    display: none; /* Começa escondido */
+    position: fixed; /* Fica fixo na tela mesmo com rolagem */
+    z-index: 1000; /* Garante que fique na frente de tudo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+}
+
+/* A caixa branca onde o vídeo ficará */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centraliza verticalmente e horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 720px; /* Largura máxima para o vídeo */
+    position: relative;
+    border-radius: 8px;
+}
+
+/* O botão de fechar (o "X") */
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+}
+
+/* Garante que o vídeo ocupe o espaço corretamente */
+#video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Proporção de vídeo widescreen */
+}
